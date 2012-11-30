@@ -6,3 +6,6 @@ class Groceries(models.Model):
     proteins      = models.FloatField()
     fats          = models.FloatField()
     carbohydrates = models.FloatField()
+
+    def __unicode__(self):
+        return self.title
