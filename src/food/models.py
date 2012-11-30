@@ -6,4 +6,3 @@ class Groceries(models.Model):
     proteins      = models.FloatField()
     fats          = models.FloatField()
     carbohydrates = models.FloatField()
-    test = models.BooleanField(default=False)
