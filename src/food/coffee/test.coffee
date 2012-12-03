@@ -2,7 +2,7 @@
 
 $(() ->
     $.get '/food/ajax', (data) ->
-      $('#food').append "<option value='#{i}'>#{i}</option>" for i in data 
+      $('#food').append new Option(i, i, true, true) for i in data 
     $(".column").sortable(connectWith: ".column").disableSelection()  
           
     $(".portlet")  
