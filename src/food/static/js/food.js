@@ -7,7 +7,7 @@
   };
 
   $(function() {
-    $.get('/food/ajax', function(data) {
+    $.get('/food/ajax_portions', function(data) {
       var i, _i, _len, _results;
       _results = [];
       for (_i = 0, _len = data.length; _i < _len; _i++) {
