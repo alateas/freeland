@@ -1,4 +1,5 @@
-from food.models import Groceries
+from food.models import Food, Portion
 from django.contrib import admin
  
-admin.site.register(Groceries)
+admin.site.register(Food)
+admin.site.register(Portion)
