@@ -9,6 +9,6 @@ def main(request):
     return render_to_response('food.html')
 
 def ajax_portions(request):
-    data = json.dumps([i.title for i in Portion.objects.all()])
+    data = json.dumps([str(i) for i in Portion.objects.all()])
     
     return HttpResponse(data, mimetype="application/json;  charset=utf-8")

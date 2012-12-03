@@ -2,8 +2,8 @@
 (function() {
   var add_action;
 
-  add_action = function() {
-    return $('.food_list').append("<li>" + ($('.portions').val()) + "</li>");
+  add_action = function(event_object) {
+    return alert(event_object.target)($('.food_list:parent').append("<li>" + ($('.portions').val()) + "</li>"));
   };
 
   $(function() {
