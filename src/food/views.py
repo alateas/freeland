@@ -5,8 +5,8 @@ from django.core import serializers
 from django.http import HttpResponse
 import django.utils.simplejson as json
 
-def test(request):
-    return render_to_response('test.html')
+def main(request):
+    return render_to_response('food.html')
 
 def ajax(request):
     data = json.dumps([i.title for i in Groceries.objects.all()])
