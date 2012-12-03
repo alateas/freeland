@@ -3,7 +3,10 @@
   var add_action;
 
   add_action = function(event_object) {
-    return alert(event_object.target)($('.food_list:parent').append("<li>" + ($('.portions').val()) + "</li>"));
+    var day_block, portion;
+    day_block = $(event_object.target).parent();
+    portion = day_block.children('.portions').val();
+    return day_block.children('ul').append("<li>" + portion + "</li>");
   };
 
   $(function() {
