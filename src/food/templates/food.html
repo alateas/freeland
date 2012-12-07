@@ -5,30 +5,53 @@
     <meta charset="utf-8" />
     <title>Food sorting</title>
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="/static/css/food.css" />
     <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
     <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
     <script src="/static/js/food.js"></script>
 </head>
 <body>
  
-<div id="day_block1">
-    <select class="portions">
-    </select> 
-    
-    <button class="add">+</button>
+<div class="day" id="day_1">
+    <div class="info">
+        proteins: <span class="proteins">0</span>g, 
+        fats: <span class="fats">0</span>g,  
+        carbohydrates: <span class="carbohydrates">0</span>g, 
+        energy: <span class="energy">0</span>kkal, 
+    </div>
+    <div classs="control">
+        <div class="meal breakfast left">
+            <select class="portions">
+            </select> 
+            
+            <button class="add">+</button>
 
-    <ul class="food_list">
-    </ul>
-</div>
+            <ul class="food_list">
+            </ul>
+        </div>
 
-<div id="day_block2">
-    <select class="portions">
-    </select> 
-    
-    <button class="add">+</button>
+        <div class="wrapper">
+            <div class="meal dinner right">
+                <select class="portions">
+                </select> 
+                
+                <button class="add">+</button>
 
-    <ul class="food_list">
-    </ul>
+                <ul class="food_list">
+                </ul>
+            </div>
+
+            <div class="meal lunch center">
+                <select class="portions">
+                </select> 
+                
+                <button class="add">+</button>
+
+                <ul class="food_list">
+                </ul>
+            </div>      
+        </div>
+    </div>
 </div>
 
 

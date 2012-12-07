@@ -16,3 +16,19 @@ class Portion(models.Model):
 
     def __unicode__(self):
         return "%s (%d g)" % (self.food.title, self.weight)
+
+    @property
+    def energy(self):
+        return (self.food.energy / 100) * self.weight
+
+    @property
+    def proteins(self):
+        return (self.food.proteins / 100) * self.weight
+
+    @property
+    def fats(self):
+        return (self.food.fats / 100) * self.weight
+
+    @property
+    def carbohydrates(self):
+        return (self.food.carbohydrates / 100) * self.weight
