@@ -5,6 +5,12 @@
     position:relative;
     height: 150px;
 }
+ul.food_list{
+    list-style-type: none;
+}
+ul.food_list li{
+    /*border: 1px solid black;*/
+}
 .info{
     text-align:center;
     padding-bottom: 10px;      

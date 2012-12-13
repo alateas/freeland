@@ -1,0 +1,814 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"c",
+				"children"
+			],
+			[
+				"inf",
+				"info_block"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"p",
+				"proteins"
+			],
+			[
+				"w",
+				"weight"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"mf",
+				"mfloat	FloatField (mfloat)"
+			],
+			[
+				"ass",
+				"assertTrue"
+			],
+			[
+				"se",
+				"set_date"
+			],
+			[
+				"_",
+				"__str__"
+			],
+			[
+				"le",
+				"lease_fabric"
+			],
+			[
+				"T",
+				"TemporaryLease"
+			],
+			[
+				"__",
+				"__parse"
+			],
+			[
+				"exc",
+				"excluded"
+			],
+			[
+				"sen",
+				"sender_number"
+			],
+			[
+				"Se",
+				"SettingsAdmin"
+			],
+			[
+				"e",
+				"email"
+			],
+			[
+				"fax",
+				"fax_dev"
+			],
+			[
+				"pd",
+				"pdf_file"
+			],
+			[
+				"E",
+				"EmailMessage"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/food/models.py",
+			"settings":
+			{
+				"buffer_size": 894,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/djnew/urls.py",
+			"settings":
+			{
+				"buffer_size": 553,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/food/urls.py",
+			"settings":
+			{
+				"buffer_size": 172,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/food/admin.py",
+			"settings":
+			{
+				"buffer_size": 127,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "# -*- coding: utf-8 -*-\nimport datetime\nfrom south.db import db\nfrom south.v2 import SchemaMigration\nfrom django.db import models\n\nif db.backend_name == 'mysql':\n    db.execute('SET storage_engine=INNODB')\n    \nclass Migration(SchemaMigration):\n\n    def forwards(self, orm):\n        # Adding model 'Groceries'\n        db.create_table('food_groceries', (\n            ('id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),\n            ('title', self.gf('django.db.models.fields.CharField')(max_length=200)),\n            ('energy', self.gf('django.db.models.fields.FloatField')()),\n            ('proteins', self.gf('django.db.models.fields.FloatField')()),\n            ('fats', self.gf('django.db.models.fields.FloatField')()),\n            ('carbohydrates', self.gf('django.db.models.fields.FloatField')()),\n        ))\n        db.send_create_signal('food', ['Groceries'])\n\n\n    def backwards(self, orm):\n        # Deleting model 'Groceries'\n        db.delete_table('food_groceries')\n\n\n    models = {\n        'food.groceries': {\n            'Meta': {'object_name': 'Groceries'},\n            'carbohydrates': ('django.db.models.fields.FloatField', [], {}),\n            'energy': ('django.db.models.fields.FloatField', [], {}),\n            'fats': ('django.db.models.fields.FloatField', [], {}),\n            'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),\n            'proteins': ('django.db.models.fields.FloatField', [], {}),\n            'title': ('django.db.models.fields.CharField', [], {'max_length': '200'})\n        }\n    }\n\n    complete_apps = ['food']",
+			"file": "src/food/migrations/0001_initial.py",
+			"file_size": 1596,
+			"file_write_time": 129987432574964642,
+			"settings":
+			{
+				"buffer_size": 1596,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/food/templates/food.html",
+			"settings":
+			{
+				"buffer_size": 1596,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/food/views.py",
+			"settings":
+			{
+				"buffer_size": 721,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/food/coffee/food.coffee",
+			"settings":
+			{
+				"buffer_size": 788,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/food/static/css/food.css",
+			"settings":
+			{
+				"buffer_size": 502,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 311.0,
+		"selected_items":
+		[
+			[
+				"coff",
+				"Coffee: Run Script"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Discover Packages"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"git pu",
+				"Git: Push"
+			],
+			[
+				"pu",
+				"Git: Push Current Branch"
+			],
+			[
+				"git pus",
+				"Git: Push"
+			],
+			[
+				"git p",
+				"Git: Push"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add..."
+			],
+			[
+				"git di",
+				"Git: Diff All"
+			],
+			[
+				"git st",
+				"Git: Status"
+			],
+			[
+				"git lo",
+				"Git: Log Current File"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"a",
+				"Git: Add..."
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"add ",
+				"Git: Add..."
+			],
+			[
+				"git statu",
+				"Git: Status"
+			],
+			[
+				"git co",
+				"Git: Commit"
+			],
+			[
+				"pyth",
+				"Set Syntax: Python"
+			],
+			[
+				"git commm",
+				"Set Syntax: Git Commit Message"
+			],
+			[
+				"ad",
+				"Git: Add..."
+			],
+			[
+				"git sta",
+				"Git: Status"
+			],
+			[
+				"git c",
+				"Git: Commit"
+			],
+			[
+				"git",
+				"Git: Gitk"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 132.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/alateas/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/O/freeland/src/food/coffee/test.coffee",
+		"/O/freeland/src/food/templates/test.html",
+		"/O/freeland/src/food/static/js/test.js",
+		"/O/freeland/src/food/models.pyc",
+		"/O/freeland/src/djnew/settings.py",
+		"/O/freeland/src/food/models.py",
+		"/C/Users/alateas/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/O/src/outlets/settings.py",
+		"/O/src/outlets/urls.py",
+		"//vincent/c$/zabbix_agentd.conf",
+		"/C/Users/alateas/AppData/Roaming/Sublime Text 2/Packages/Git/Git.sublime-settings",
+		"//192.168.106.9/alateas/outlets/src/outlets/urls.py",
+		"//dev/alateas/outlets/src/outlets/settings.py",
+		"/C/Users/alateas/AppData/Roaming/Sublime Text 2/Packages/User/Git.sublime-settings",
+		"//192.168.106.8/root/home/djangoprojects/infosys/src/urls.py",
+		"/D/scripts/dhcp.py",
+		"//192.168.106.8/root/home/djangoprojects/infosys/src/models.py",
+		"//192.168.106.8/root/home/djangoprojects/infosys/src/main/admin.py",
+		"/C/Users/alateas/AppData/Local/Temp/_tc/infosysf/src/infosys/settings.py",
+		"//192.168.106.8/root/home/djangoprojects/infosys/src/settings.py",
+		"//192.168.106.8/root/home/user/install-django-ubuntu/db_settings.py.tpl",
+		"//192.168.106.8/root/home/user/install-django-ubuntu/settings.py.tpl",
+		"//192.168.106.8/root/home/user/install-django-ubuntu/create-project.sh",
+		"//192.168.106.8/root/home/user/install-django-ubuntu/virtual.conf",
+		"//192.168.106.8/root/home/user/install-django-ubuntu/install.sh",
+		"//192.168.106.8/root/home/djangoprojects/testprj/src/settings.py",
+		"/C/Users/alateas/AppData/Local/Temp/Rar$DI89.544/urls.py",
+		"/C/Users/alateas/AppData/Local/Temp/Rar$DI73.545/settings.py",
+		"/C/Users/alateas/AppData/Local/Temp/Rar$DI73.544/__init__.py",
+		"//uzsrv01/c$/zabbix_agentd.conf",
+		"//192.168.106.8/root/home/user/install-django-ubuntu/install.sh.log",
+		"/C/Users/alateas/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"//192.168.106.7/root/home/user/install-django-ubuntu/install.sh",
+		"//192.168.106.7/root/home/user/install-django-ubuntu/install.sh.log",
+		"/I/distr/monitoring/Zabbix/agents_2.0_win/zabbix_agentd.conf",
+		"/I/distr/monitoring/Zabbix/agents_2.0_win/zabbix_agentd.win.conf",
+		"//x/IT/distr/monitoring/Zabbix/agents_2.0/win64/zabbix_agentd.conf",
+		"//x/c$/zabbix_agentd.conf",
+		"//ts/c$/zabbix_agentd.conf",
+		"/W/src/hylafax/scripts/store_fax.py",
+		"/W/src/hylafax/tests.py",
+		"/W/src/pbx/tests.py",
+		"/W/src/templates/pbx/index.html",
+		"/W/src/pbx/views.py",
+		"/W/src/settings.py",
+		"/D/elastix/dahdi_without_oslec/install.sh",
+		"/D/elastix/dahdi_without_oslec/build.sh",
+		"/W/src/pbx/index.html",
+		"//elastix/astertools/src/db_settings_asterisk.py",
+		"//elastix/astertools/src/hylafax/models.py",
+		"//elastix/astertools/src/db_settings.py",
+		"//elastix/astertools/src/settings.py",
+		"//elastix/astertools/src/urls.py",
+		"/D/scripts/find.py",
+		"//elastix/astertools/src/pbx/views.py",
+		"//elastix/astertools/src/templates/pbx/index.html",
+		"//elastix/astertools/src/media/style.css",
+		"//elastix/astertools/src/pbx/index.html",
+		"/D/scripts/vb/1cfinder.cmd",
+		"//x/public/scripts/test.vbs",
+		"/C/Users/alateas/Downloads/youtrack_initd.template",
+		"/D/scripts/vb/test.vbs",
+		"/W/src/hylafax/models.py",
+		"/W/src/pbx/models.py",
+		"/X/info/ip_range.txt",
+		"/X/info/расключка/расключка.txt",
+		"/C/Users/alateas/AppData/Roaming/Sublime Text 2/Packages/Python/Python.sublime-build",
+		"/D/scripts/loop.py",
+		"/C/Users/alateas/Downloads/spark.properties",
+		"/C/daniel/c$/Windows/krb5.ini",
+		"/C/Users/alateas/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/alateas/AppData/Roaming/Sublime Text 2/Packages/User/Python.sublime-settings",
+		"/D/esx/Удаленная установка ESXi/Readme.txt",
+		"/C/Users/alateas/AppData/Roaming/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/C/Users/alateas/AppData/Roaming/Sublime Text 2/Packages/User/JSON.sublime-settings",
+		"/C/Users/alateas/AppData/Roaming/Sublime Text 2/Packages/Default/Base File.sublime-settings",
+		"/W/src/urls.py",
+		"/W/src/db_settings.py",
+		"/W/src/hylafax/scripts/test_email.py",
+		"/W/src/pbx/scripts/test.py",
+		"/W/logs/fax.log",
+		"/W/src/hylafax/views.py",
+		"/W/src/pbx/text.py",
+		"/C/Users/alateas/AppData/Roaming/Sublime Text 2/Packages/User/Global.sublime-settings",
+		"//elastix/astertools/logs/fax.log",
+		"//elastix/astertools/src/hylafax/views.py",
+		"//elastix/astertools/src/hylafax/admin.py",
+		"//elastix/astertools/scripts/install/install.sh",
+		"//elastix/astertools/src/hylafax/scripts/store_fax.py",
+		"//elastix/astertools/src/hylafax/tests.py",
+		"//elastix/astertools/logs/email.log",
+		"//elastix/astertools/src/hylafax/scripts/test_email.py"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"):\n",
+			"fats",
+			"meal_block",
+			"energy",
+			"get_energy",
+			"energy",
+			"get_energy",
+			"energy",
+			"150px",
+			"300px",
+			"150px",
+			"ctrl+shift+L",
+			"150px",
+			"left",
+			"block",
+			"tab",
+			"block",
+			"nginx",
+			"progress",
+			"pid",
+			"DisableActive",
+			"ts",
+			"tab",
+			"1",
+			"self",
+			" = {}",
+			" '+'",
+			"()",
+			"imnameport",
+			"UsersCharField",
+			"testhere",
+			"de",
+			"def",
+			"delete",
+			"absolute_import",
+			"dddddddddd",
+			"dddd"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/food/models.py",
+					"settings":
+					{
+						"buffer_size": 894,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								456,
+								456
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/djnew/urls.py",
+					"settings":
+					{
+						"buffer_size": 553,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								186,
+								186
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/food/urls.py",
+					"settings":
+					{
+						"buffer_size": 172,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								169,
+								169
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/food/admin.py",
+					"settings":
+					{
+						"buffer_size": 127,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/food/migrations/0001_initial.py",
+					"settings":
+					{
+						"buffer_size": 1596,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								206,
+								206
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"file": "src/food/templates/food.html",
+					"settings":
+					{
+						"buffer_size": 1596,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								866,
+								866
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 162.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/food/views.py",
+					"settings":
+					{
+						"buffer_size": 721,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								503,
+								503
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"file": "src/food/coffee/food.coffee",
+					"settings":
+					{
+						"buffer_size": 788,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								544,
+								544
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 8,
+					"file": "src/food/static/css/food.css",
+					"settings":
+					{
+						"buffer_size": 502,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								178,
+								185
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.5,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.git":
+	{
+		"height": 185.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

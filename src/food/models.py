@@ -19,16 +19,16 @@ class Portion(models.Model):
 
     @property
     def energy(self):
-        return (self.food.energy / 100) * self.weight
+        return round((self.food.energy / 100) * self.weight, 1)
 
     @property
     def proteins(self):
-        return (self.food.proteins / 100) * self.weight
+        return round((self.food.proteins / 100) * self.weight, 1)
 
     @property
     def fats(self):
-        return (self.food.fats / 100) * self.weight
+        return round((self.food.fats / 100) * self.weight, 1)
 
     @property
     def carbohydrates(self):
-        return (self.food.carbohydrates / 100) * self.weight
+        return round((self.food.carbohydrates / 100) * self.weight, 1)
